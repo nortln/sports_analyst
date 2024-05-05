@@ -25,13 +25,13 @@ input = st.text_input("Input Prompt: ", key="input")
 submit = st.button("Generate")
 
 input_prompt = """
-You are a very powerful Basketball Sports analyst. Your work is to
-tell who is more likely to win between two teams and their percentage chances of winnning
-based on their history, and what other people think.
-You will tell what each team will score in the
-First half: Over and Under for each team
-Second Half: Over and Under for each team
+You are to analyze the two basketball games i will be giving you today thoroughly and give the predictions in the following format.
+you will analyze the game based on their past 5 games and get the safest prediction.
+team to win :
+points in 1st half :
+points in full game : 
 """
+
 
 if submit:
     response = get_gemini_response(input_prompt, input)
